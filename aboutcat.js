@@ -6,9 +6,8 @@ let p = document.querySelector("p");
 
 btn.addEventListener("click",async ()=>
 {
-  //let fact = getfact();
   let fact =  await getfact();
-  console.log(fact);
+  //must use await so that we can get data after promis is fullfilled
   p.innerText = fact;
 })
 
